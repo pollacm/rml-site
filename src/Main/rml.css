@@ -1,0 +1,72 @@
+.nav-main-breadcrumbs-row a, 
+.nav-main-breadcrumbs-row, 
+.nav-main-breadcrumbs, 
+#comparePlayersCount, 
+.comparePlayersLinkDiv, 
+.playerSearchForm
+{ 
+	color: white !important; 
+}
+
+.heading
+{
+	font-family: cursive;
+	font-size: 30px;	
+	text-shadow: 2px 3px 2px rgba(150, 150, 150, 1);
+}
+
+.center
+{
+	text-align: center;
+}
+
+.bold-green
+{
+	font-weight:bold;
+	color:green;
+}
+
+.bold-red
+{
+	font-weight:bold;
+	color:red;
+}
+
+.bold-blue
+{
+	font-weight:bold;
+	color:blue;
+}
+
+.bold-gray
+{
+	font-weight:bold;
+	color:gray;
+}
+
+.italic
+{
+	color: #A3A295;
+	font-style: italic;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.section-heading
+{
+	color: #3E4D52 !important;
+	margin-top: 20px !important;
+}
+
+.help-text
+{
+	background-color: lightgray;
+}
+
+.games-teams-btn a
+{
+    color: #ccc !important;
+}
