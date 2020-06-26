@@ -3,6 +3,8 @@ import './App.css';
 import LeagueHeader from './LeagueHeader/LeagueHeader.js'
 import LeagueTitle from './LeagueTitle/LeagueTitle.js'
 import LeaguePage from './LeaguePage/LeaguePage.js'
+import LeagueScores from './LeagueScores/LeagueScores.js'
+import Scores from './Scores/Scores.js'
 import News from './News/News.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -20,13 +22,13 @@ function App() {
             <div className="col-sm-8">
               <LeaguePage />
             </div>
-            <div className="col-sm-2" style={{ backgroundColor: "pink"}}>
-              <p>Scores</p>
+            <div className="col-sm-2">
+              <Scores />
             </div>
           </div>
         </div>
         <br/>
-        <div style={{ backgroundColor: "gray"}}>Current League Scores</div>
+        <LeagueScores />
     </div>     
       
       

@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import { thisExpression } from '@babel/types';
 
-class NewsSnippet extends Component {
+export default class NewsSnippet extends React.Component {
   constructor(props) {
     super(props);
-    window.snippets = props;
-    console.log(props);
     this.state = {
       name : props.name,
       headline : props.headline,
@@ -16,7 +13,7 @@ class NewsSnippet extends Component {
   render() {
     return (
            <div className="card p-2">
-            <blockquote class="blockquote mb-0 card-body">
+            <blockquote className="blockquote mb-0 card-body">
             <p style={{marginBottom: "2px"}}><b>{this.state.name}</b></p>
             <footer className="blockquote-footer">
               <small className="text-muted">
@@ -29,5 +26,3 @@ class NewsSnippet extends Component {
     )
   }
 }
-
-export default NewsSnippet;

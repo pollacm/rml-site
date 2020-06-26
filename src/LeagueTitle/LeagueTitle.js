@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class LeagueTitle extends Component {
+export default class LeagueTitle extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,10 +19,10 @@ class LeagueTitle extends Component {
               <header>{this.state.title}</header>
           </div>
         </div>
-        <div class="collumn" style={{marginBottom: "0"}}>
-          <div class="head">
+        <div className="collumn" style={{marginBottom: "0"}}>
+          <div className="head">
             <p style={{marginBottom: "0"}}>
-                <span class="headline hl6">{this.state.week}</span>
+                <span className="headline hl6">{this.state.week}</span>
             </p>
           </div>
         </div>
@@ -40,4 +40,3 @@ class LeagueTitle extends Component {
   }
 }
 
-export default LeagueTitle;
