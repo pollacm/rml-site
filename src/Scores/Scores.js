@@ -7,6 +7,8 @@ class Scores extends Component {
     this.state = {
       scores : []
     };
+
+    this.handleToggleChange = this.handleToggleChange.bind(this);
   }
 
   componentDidMount() {
@@ -39,10 +41,21 @@ class Scores extends Component {
   });
 }
 
-toggle = (name) => {
-  var score = this.state.scores.filter((e) => e.league === name);
-  const currentEnabledState = score.enabled;
-  this.setState({enabled: !currentEnabledState})
+handleToggleChange = (name) => {
+  var updatedScores = [];
+
+  this.state.scores.map((score, index) => {
+    if(score.league === name) {
+      score.enabled = true;
+    }
+    else{
+      score.enabled = false;
+    }
+    updatedScores[index] = score;
+  });
+
+  this.setState({scores : updatedScores})
+  
 }
 
   render() {
@@ -50,7 +63,7 @@ toggle = (name) => {
     const scores = [];
 
     this.state.scores.map((score, index) => {
-      scores.push(<Score key={index} {...score}/>)
+      scores.push(<Score key={index} {...score} onToggleChange={this.handleToggleChange}/>)
     });
     
     return (scores);

@@ -50,7 +50,7 @@ export default class LeagueScores extends Component {
     const scores = [];
 
     this.state.leagueScores.map((score, index) => {      
-      scores.push(<span><LeagueScore key={index} {...score} />
+      scores.push(<span key={index}><LeagueScore key={index} {...score} />
         {index < this.state.leagueScores.length - 1 ? 
           <div style={{borderLeft: "2px solid white", float: "left", height: "54px", margin: "2px"}}></div>: "" 
         }</span>)
